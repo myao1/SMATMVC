@@ -1,0 +1,11 @@
+C:\Trunk\myao1\SMATMVC\bin\Debug\netcoreapp2.0\SMATMVC.deps.json
+C:\Trunk\myao1\SMATMVC\bin\Debug\netcoreapp2.0\SMATMVC.runtimeconfig.json
+C:\Trunk\myao1\SMATMVC\bin\Debug\netcoreapp2.0\SMATMVC.runtimeconfig.dev.json
+C:\Trunk\myao1\SMATMVC\bin\Debug\netcoreapp2.0\SMATMVC.dll
+C:\Trunk\myao1\SMATMVC\bin\Debug\netcoreapp2.0\SMATMVC.pdb
+C:\Trunk\myao1\SMATMVC\obj\Debug\netcoreapp2.0\SMATMVC.csprojResolveAssemblyReference.cache
+C:\Trunk\myao1\SMATMVC\obj\Debug\netcoreapp2.0\SMATMVC.csproj.CoreCompileInputs.cache
+C:\Trunk\myao1\SMATMVC\obj\Debug\netcoreapp2.0\SMATMVC.AssemblyInfoInputs.cache
+C:\Trunk\myao1\SMATMVC\obj\Debug\netcoreapp2.0\SMATMVC.AssemblyInfo.cs
+C:\Trunk\myao1\SMATMVC\obj\Debug\netcoreapp2.0\SMATMVC.dll
+C:\Trunk\myao1\SMATMVC\obj\Debug\netcoreapp2.0\SMATMVC.pdb
