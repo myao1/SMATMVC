@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using SMATMVC.Models;
 
 namespace SMATMVC
 {
@@ -21,7 +23,10 @@ namespace SMATMVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
             services.AddMvc();
+
+            services.AddDbContext<SiteInfoContext>(options => options.UseSqlite("Data Source=SiteInfoMvc.db"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

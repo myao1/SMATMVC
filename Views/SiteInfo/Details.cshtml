@@ -1,0 +1,60 @@
+@model SMATMVC.Models.SiteInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SiteInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WebUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WebUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiteUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Creator)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Creator)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteCollectionAdmins)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiteCollectionAdmins)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Owners)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Owners)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastItemModifiedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastItemModifiedDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProposedDisposition)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProposedDisposition)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -10,8 +10,16 @@ using SMATMVC.Models;
 namespace SMATMVC.Controllers{
     public class SMATController : Controller{
 
-        public string Index(string name, int ID = 0){
-            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+        public IActionResult Index(string name, int ID = 0){
+            return View();
+            //return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+        }
+
+        public IActionResult Welcome(string name, int numTimes = 1){
+            ViewData["Message"] = "Hello " + name;
+            ViewData["NumTimes"] = numTimes;
+
+            return View();
         }
     }
 }

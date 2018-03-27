@@ -1,0 +1,63 @@
+@model SMATMVC.Models.SiteInfo
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SiteInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WebUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WebUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiteUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Creator)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Creator)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteCollectionAdmins)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiteCollectionAdmins)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Owners)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Owners)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastItemModifiedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastItemModifiedDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProposedDisposition)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProposedDisposition)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
