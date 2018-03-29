@@ -12,6 +12,7 @@ namespace SMATMVC.Controllers
     public class SiteInfoController : Controller
     {
         private readonly SiteInfoContext _context;
+        
 
         public SiteInfoController(SiteInfoContext context)
         {
